@@ -1,32 +1,25 @@
-# Pazarama iOS Bootcamp - Hafta 4 - Ödev
+# FlickrApp
+# Structure
+* MVVM
+* Firebase (Remote Config, Authentication, Firestore)
+* Moya
+* Snapkit
+* IQKeyboardManager
 
-## Flickr App
+# Features
 
-Uygulamamızı geliştirirken Flickr API ve Firebase araçlarını kullanacağız. Uygulamada Firebase Auth ile kullanıcı kayıt ve giriş işlemlerini yöneteceğiz. Uygulamanın ana ekranında Flickr API’ı kullanarak son yüklenen fotoğrafları UITableViewController kullanarak listeleyeceğiz. Bu aşamada özelleşmiş bir UITableViewCell ile Instagram’daki post benzeri bir görünüm oluşturacağız. Kullanıcı görseli beğenebilir, kütüphanesine kaydedebilir ve profil ekranından önceden beğendiği veya kütüphaneye kaydettiği fotoğrafları görüntüleyebilir. Firebase firestore kullanılarak bilgiler buluta kaydedilmelidir.
+* Login, SignUp
+  
+https://user-images.githubusercontent.com/64533036/196569653-3e2ee47f-cbb2-45ee-b2e2-d1f0c9d3a02e.mov
 
-Uygulamada arama ekranı olmalıdır. Arama ekranında mevcut bir arama olmadığı sürece popüler fotoğraflar UICollectionViewController ile grid görünümünde listelenmelidir. Eğer bir arama işlemi gerçekleştirilirse Flickr API aracılı ile girilen anahtar kelimeye uygun olarak arama yapılır ve görseller listelenir. Arama işlemi bittiğinde ekranda popüler paylaşımlar gözükmeye devam edecektir. 
+* Like and Save
 
-Kullanıcı profilini düzenleyebilir olmalıdır. Bir profil fotoğrafı ekleyebilir veya kullanıcı adını değiştirebilir. Firebase remote config kullanılarak uygulamaya kayıt olma özelliği etkinleştirilebilir veya devre dışı bırakabilir. Kullanıcı profil ekranından çıkış yapıp giriş ekranına yönlendirilmelidir.
+https://user-images.githubusercontent.com/64533036/196566837-6271e9d4-5772-4701-96b5-8f395f080807.mov
 
-![img](flickr-app.png)
+* Search photos
 
-## Değerlendirme Kriterleri
+https://user-images.githubusercontent.com/64533036/196566851-da5a2c5f-2323-4b39-918f-ac871157dd86.mov
 
-1. Flickr API ile iletişim katmanının Moya kütüphanesi aracılığı ile oluşturulması.
-2. Firebase Auth, Remote Config ve Firestore özelliklerinin kullanılması.
-3. Uygulamanın ekranlarının açıklamaya uygun şekilde tasarlanması.
-4. MVVM tasarım düzeninin kullanılması.
-5. Controller ve ViewModel arasındaki iletişimin Delegate veya Closure kullanılarak yapılması.
-6. Ekran tasarımlarının SnapKit ile programlayarak veya Xib dosyaları ile yapılması.
-7. Minimum versiyon desteğinin iOS 12.0 olması.
-8. IQKeyboardManager ile input alanları arasındaki geçişin yönetilmesi. Klavyenin ekranda bir boşluğa dokununca veya klavye üstündeki toolbarda yer alan KAPAT butonuna basarak kapatılabilmesi.
-9. Üçüncü parti kütüphanelerin Cocoapods veya SPM ile entegrasyonu.
+* Update Profile
 
-## Faydalı Linkler
-
-- Flickr API: https://www.flickr.com/services/api/
-- Firebase Auth: https://firebase.google.com/docs/auth/ios/start
-- Firebase Firestore: https://firebase.google.com/docs/firestore/quickstart
-- Firebase Cloud Storage: https://firebase.google.com/docs/firestore/quickstart
-- Firebase Remote Config: https://firebase.google.com/docs/remote-config/?authuser=0
-- Örnek Proje:  https://github.com/232-Pazarama-iOS-Swift-Bootcamp/week4_day1_crypto_app
+https://user-images.githubusercontent.com/64533036/196566861-bf4eda72-65ab-44a1-950a-a79a39090232.mov
